@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'PhoneBalanceKey'
+            storeFile file('C:/Users/Rafael/.AndroidStudio/keystore.jks')
+            keyPassword ''
+            storePassword ''
+            if(System.console() != null) {
+                keyPassword System.console().readLine("\nKey password: ")
+                storePassword System.console().readLine("Keystore password: ")
+            }
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId 'com.raftelti.phoneBalance'
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 9
+        versionName "1.1.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:cardview-v7:22.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.0.8'
+    compile 'com.afollestad:material-dialogs:0.6.6.0'
+}

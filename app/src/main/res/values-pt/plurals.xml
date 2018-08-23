@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="every_n_minutes">
+        <item quantity="one">A cada minuto</item>
+        <item quantity="other">A cada %d minutos</item>
+    </plurals>
+    <plurals name="every_n_hours">
+        <item quantity="one">A cada hora</item>
+        <item quantity="other">A cada %d horas</item>
+    </plurals>
+    <plurals name="every_n_days">
+        <item quantity="one">A cada dia</item>
+        <item quantity="other">A cada %d dias</item>
+    </plurals>
+</resources>

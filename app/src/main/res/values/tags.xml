@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="history_item_task" type="id" />
+    <item name="history_item_viewholder" type="id" />
+</resources>

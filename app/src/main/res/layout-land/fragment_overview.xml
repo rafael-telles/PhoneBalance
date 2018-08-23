@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raftelti.phoneBalance.ui.main.OverviewFragment">
+
+    <LinearLayout
+        android:id="@+id/overview_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/current_balance_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:text="@string/unkown_balance_desc"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_balance_desc"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.raftelti.phoneBalance.ui.main.components.BalanceTextView
+                    android:id="@+id/current_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_standard"
+                    android:textColor="@android:color/black"
+                    android:textSize="50sp" />
+
+
+                <com.raftelti.phoneBalance.ui.main.components.OverviewDifferenceTextView
+                    android:id="@+id/difference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/balance_down" />
+
+            </LinearLayout>
+
+            <com.raftelti.phoneBalance.ui.main.components.TimestampTextView
+                android:id="@+id/last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#66000000" />
+
+            <com.raftelti.phoneBalance.ui.main.components.TimestampTextView
+                android:id="@+id/last_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last_update"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#66000000" />
+        </RelativeLayout>
+
+        <com.raftelti.phoneBalance.ui.main.components.OverviewChart
+            android:id="@+id/chart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/overview_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/unkown_balance_desc"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</FrameLayout>

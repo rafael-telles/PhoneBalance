@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_sms_settings_title">SMS</string>
+
+    <string name="pref_update_settings_title">Atualizações</string>
+    <string name="pref_update_periodically_title">Atualizar periodicamente</string>
+    <string name="pref_update_interval_title">Intervalo de atualizações</string>
+    <string name="pref_update_on_call_title">Atualizar depois de ligações</string>
+
+    <string name="pref_notifications_settings_title">Notificações</string>
+    <string name="pref_enable_notifications_title">Habilitar notificações</string>
+
+    <string name="pref_request_settings_group_title">Requisições</string>
+    <string name="pref_request_mode_title">Modo de requisição</string>
+    <string name="pref_request_ussd_code_title">Código USSD</string>
+    <string name="pref_sim_slot_title">Cartão SIM</string>
+    <string name="pref_request_sms_number_title">Número de SMS para enviar</string>
+    <string name="pref_response_sms_number_title">Número de SMS para receber</string>
+    <string name="pref_sms_text_title">Texto do SMS</string>
+</resources>

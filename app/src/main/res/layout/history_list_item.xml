@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/balance_list_item_height">
+
+    <com.raftelti.phoneBalance.ui.main.components.BalanceTextView
+        android:id="@+id/list_item_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/balance_placeholder"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <com.raftelti.phoneBalance.ui.main.components.TimestampTextView
+        android:id="@+id/list_item_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:text="@string/date_placeholder"
+        android:textSize="12sp" />
+
+    <com.raftelti.phoneBalance.ui.main.components.DifferenceTextView
+        android:id="@+id/list_item_difference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/balance_up"
+        android:textSize="12sp" />
+</RelativeLayout>

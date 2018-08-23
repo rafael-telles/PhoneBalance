@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_request_mode_entries" translatable="false">
+        <item>SMS</item>
+        <item>USSD</item>
+    </string-array>
+
+    <string-array name="pref_request_mode_entryValues" translatable="false">
+        <item>sms</item>
+        <item>ussd</item>
+    </string-array>
+</resources>

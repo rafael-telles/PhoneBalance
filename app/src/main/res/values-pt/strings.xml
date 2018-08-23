@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_refresh">Atualizar</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="title_activity_settings">Configurações</string>
+
+    <string name="title_overview_tab">Visão Geral</string>
+    <string name="title_history_tab">Histórico</string>
+
+    <string name="balance_presentation">Este é o seu saldo:</string>
+
+    <string name="notification_subtext_down">Você gastou %s.</string>
+    <string name="notification_subtext_up">Você recarregou %s.</string>
+    <string name="notification_text_down">Seu saldo diminuiu para %s.</string>
+    <string name="notification_text_up">Seu saldo aumentou para %s.</string>
+    <string name="notification_title">Saldo atualizado!</string>
+    <string name="balance_label">Saldo</string>
+    <string name="difference_label">Diferença</string>
+    <string name="timestamp_label">Data</string>
+    <string name="last_verification_prefix">Última verificação:</string>
+    <string name="last_update_prefix">Última mudança:</string>
+    <string name="accessibility_service_description">Você precisa habilitar esse serviço para usar o modo USSD</string>
+    <string name="requesting_balance_text">Atualizando saldo…</string>
+    <string name="firststart_dialog_title">Bem-vindo!</string>
+    <string name="firststart_dialog_html"><![CDATA[Obrigado por baixar o <strong>PhoneBalance</strong>!<br/><br/>Para começarmos, você precisa ajustar algumas coisas.<br/><br/>Está pronto?]]></string>
+    <string name="days">dia(s)</string>
+    <string name="every">A cada</string>
+    <string name="hours">hora(s)</string>
+    <string name="minutes">minuto(s)</string>
+    <string name="action_about">Sobre</string>
+    <string name="firststart_settings_dialog_content">Escolha um modo de requisição!\n\nUsar SMS para conferir o saldo pode ser irritante. Veja se é possível desabilitar notificações no seu app de mensagens.</string>
+    <string name="no_telephony_dialog_content">Parece que a telefonia do seu aparelho não está disponível.\nPhoneBalance não poderá conferir o seu saldo.</string>
+    <string name="no_telephony_dialog_title">Telefonia indisponível!</string>
+    <string name="pref_clear_history_content">Você realmente deseja apagar seu histórico?\nO seu saldo atual será mantido.</string>
+    <string name="pref_clear_history_title">Limpar histórico</string>
+    <string name="pref_extractor_right_place_title">Opções de extração</string>
+    <string name="pref_other_stuff_title">Outras coisas</string>
+    <string name="title_activity_about">Sobre</string>
+    <string name="pref_extractor_intruction">Selecione onde seu saldo está:</string>
+    <string name="delete">Deletar</string>
+    <string name="pref_extractor_right_place_unabled_summary">Você precisa fazer uma requisição antes de configurar isto.</string>
+    <string name="ussd_alert_dialog_content">Você precisa habilitar meu serviço para usar requisições por USSD.</string>
+    <string name="ussd_alert_dialog_positive">Habilitar</string>
+    <string name="ussd_alert_dialog_title">Serviço de USSD</string>
+    <string name="ussd_alert_dialog_toast">Clique no serviço \"PhoneBalance\" e habilite-o.</string>
+    <string name="about_bottomline">Desenvolvido por Rafael Telles</string>
+    <string name="about_topline">Com a ajuda de…</string>
+    <string name="history_empty_text">Seu histórico está vazio!</string>
+    <string name="unkown_balance_desc">Seu saldo é desconhecido!</string>
+    <string name="carrier_dialog_bottomline">Você quer usar essas configurações?</string>
+    <string name="select_carrier_dialog_title">Selecione sua operadora</string>
+    <string name="pref_load_carrier_title">Carregar configurações da operadora</string>
+    <string name="carrier_toast_text">Configurado para %s.</string>
+    <string name="no_carrier_settings_toast_text">Não há configurações predefinidas para %s.</string>
+</resources>

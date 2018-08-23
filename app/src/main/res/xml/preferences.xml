@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="@string/pref_request_settings_group_key"
+        android:title="@string/pref_request_settings_group_title">
+
+        <com.raftelti.phoneBalance.ui.settings.preferences.LoadCarrierPreferences android:title="@string/pref_load_carrier_title" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_request_mode_default"
+            android:entries="@array/pref_request_mode_entries"
+            android:entryValues="@array/pref_request_mode_entryValues"
+            android:key="@string/pref_request_mode_key"
+            android:title="@string/pref_request_mode_title" />
+
+        <EditTextPreference
+            android:enabled="true"
+            android:inputType="phone"
+            android:key="@string/pref_request_ussd_code_key"
+            android:title="@string/pref_request_ussd_code_title" />
+
+        <EditTextPreference
+            android:inputType="phone"
+            android:key="@string/pref_request_sms_number_key"
+            android:title="@string/pref_request_sms_number_title" />
+
+        <EditTextPreference
+            android:inputType="phone"
+            android:key="@string/pref_response_sms_number_key"
+            android:title="@string/pref_response_sms_number_title" />
+
+        <EditTextPreference
+            android:inputType="text"
+            android:key="@string/pref_sms_text_key"
+            android:title="@string/pref_sms_text_title" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_sim_slot_default"
+            android:key="@string/pref_sim_slot_key"
+            android:title="@string/pref_sim_slot_title" />
+
+        <com.raftelti.phoneBalance.ui.settings.preferences.ExtractorPreference
+            android:key="@string/pref_extractor_right_place_key"
+            android:title="@string/pref_extractor_right_place_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_update_settings_title">
+
+        <SwitchPreference
+            android:defaultValue="@bool/pref_update_periodically_default"
+            android:key="@string/pref_update_periodically_key"
+            android:title="@string/pref_update_periodically_title" />
+
+        <com.raftelti.phoneBalance.ui.settings.preferences.UpdateIntervalPreference
+            android:key="@string/pref_update_interval_key"
+            android:title="@string/pref_update_interval_title" />
+
+        <SwitchPreference
+            android:defaultValue="@bool/pref_update_on_call_default"
+            android:key="@string/pref_update_on_call_key"
+            android:title="@string/pref_update_on_call_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_notifications_settings_title">
+
+        <SwitchPreference
+            android:defaultValue="@bool/pref_enable_notifications_default"
+            android:key="@string/pref_enable_notifications_key"
+            android:title="@string/pref_enable_notifications_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_other_stuff_title">
+
+        <com.raftelti.phoneBalance.ui.settings.preferences.ClearHistoryPreference android:title="@string/pref_clear_history_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

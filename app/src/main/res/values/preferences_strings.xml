@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_sms_settings_key" translatable="false">sms_settings</string>
+    <string name="pref_sms_settings_title">SMS</string>
+
+    <string name="pref_request_sms_number_key" translatable="false">sms_request_number</string>
+    <string name="pref_request_sms_number_title">Request SMS number</string>
+
+    <string name="pref_response_sms_number_key" translatable="false">sms_response_number</string>
+    <string name="pref_response_sms_number_title">Response SMS number</string>
+
+    <string name="pref_sms_text_key" translatable="false">sms_text</string>
+    <string name="pref_sms_text_title">SMS text</string>
+
+    <string name="pref_update_settings_title">Updates</string>
+
+    <string name="pref_update_periodically_key" translatable="false">update_periodically</string>
+    <string name="pref_update_periodically_title">Update periodically</string>
+
+    <string name="pref_update_interval_key" translatable="false">update_interval</string>
+    <string name="pref_update_interval_title">Update interval</string>
+
+    <string name="pref_update_on_call_key" translatable="false">update_on_call</string>
+    <string name="pref_update_on_call_title">Update after calls</string>
+
+    <string name="pref_first_start_key" translatable="false">first_start</string>
+    <string name="pref_last_request_timestamp_key" translatable="false">last_request_timestamp</string>
+    <string name="pref_last_message_key" translatable="false">last_message</string>
+
+    <string name="pref_notifications_settings_title">Notifications</string>
+    <string name="pref_enable_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_enable_notifications_title">Enable notifications</string>
+    <string name="pref_request_ussd_code_key" translatable="false">ussd_code</string>
+    <string name="pref_request_ussd_code_title">USSD Code</string>
+    <string name="pref_request_mode_key" translatable="false">request_mode</string>
+    <string name="pref_request_mode_title">Request mode</string>
+    <string name="pref_request_mode_default" translatable="false">ussd</string>
+    <string name="pref_request_settings_group_key" translatable="false">request_settings_group_key</string>
+    <string name="pref_sim_slot_default" translatable="false">0</string>
+    <string name="pref_request_settings_group_title">Balance Requests</string>
+    <string name="pref_sim_slot_title">SIM Slot</string>
+    <string name="pref_sim_slot_key" translatable="false">sim_slot</string>
+    <string name="pref_extractor_right_place_key" translatable="false">extractor_right_place</string>
+    <string name="pref_clear_history_title">Clear history</string>
+    <string name="pref_clear_history_content">Do you really want to clear your history?\nIt won\'t delete your current balance.</string>
+    <string name="pref_extractor_right_place_title">Extractor Options</string>
+</resources>
